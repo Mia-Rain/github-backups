@@ -1,4 +1,4 @@
-name: Mirror rsh to Github
+name: Mirror crawl to Github
 
 on:
   schedule:
@@ -18,5 +18,5 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
         with:
-          source-repo: "ssh://g.transcendent.ink/rsh"
-          destination-repo: "git@github.com:Mia-Rain/rsh.git"
+          source-repo: "ssh://g.transcendent.ink/crawl"
+          destination-repo: "git@github.com:Mia-Rain/crawl.git"
