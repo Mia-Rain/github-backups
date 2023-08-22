@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: '0 12,00 * * *'
   workflow_dispatch:
+  push:
 
 # Ensures that only one mirror task will run at a time.
 concurrency:
