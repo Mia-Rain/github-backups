@@ -1,0 +1,20 @@
+---
+github-backups
+-- automatic backups from g.trancendent.ink to github using CI
+---
+Copying
+-- copying this repo for personal use should be extremely easy; 
+-- this project is basically just a standard configuration of github.com/wearerequired/git-mirror-action
+-- you can find an example in ./example.yml
+---- you'll have to change the URLs to your personal ones
+---- as well as add your secret key to your repo secrets
+---- and make sure your pubkey is either a deploy key or already present on your account
+---- you can also set SSH_KNOWN_HOSTS but it is not required
+---
+Shortcomings
+-- currently Github does not automatically create a repo on push
+---- thus a user will need to first create all the required repos
+---- I personally used github-cli for this
+---- but it's likely that a more advanced configuration could check if a repo exists
+---- and then create it if its missing before applying the mirror
+---
