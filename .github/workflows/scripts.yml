@@ -1,4 +1,4 @@
-name: Mirror Mitl-gen to Github
+name: Mirror scripts to Github
 
 on:
   schedule:
@@ -15,5 +15,5 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SSH_KNOWN_HOSTS: ${{ secrets.SSH_KNOWN_HOSTS }}
         with:
-          source-repo: "ssh://g.transcendent.ink/Mitl-gen"
-          destination-repo: "git@github.com:Mia-Rain/Mitl-gen.git"
+          source-repo: "ssh://g.transcendent.ink/scripts"
+          destination-repo: "git@github.com:Mia-Rain/scripts.git"
